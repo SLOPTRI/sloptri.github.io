@@ -1,0 +1,58 @@
+@import "variables";
+body {
+    font-family: Arial, sans-serif;
+    background: $primary-color;
+    color: $text-color;
+    margin: 0;
+    padding: 20px;
+}
+
+.cv__container {
+    max-width: 800px;
+    background: $secondary-color;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+    .contacto {
+        margin-top: 10px;
+        p {
+            margin: 5px 0;
+        }
+    }
+}
+
+section {
+    margin-top: 20px;
+    h2 {
+        border-bottom: 2px solid $text-color;
+        padding-bottom: 5px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            background: darken($secondary-color, 10%);
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .cv__container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
