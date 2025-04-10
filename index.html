@@ -1,57 +1,136 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Salvador López Trigueros</title>
-    <link rel="stylesheet" href="styles.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salvador López Trigueros | Developer</title>
+  <link href="bootstrap-5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 40%;
+    }
+  </style>
 </head>
-<body>
-    <div class="cv__container">
-        <header>
-            <h1>Salvador López Dev</h1>
-            <p>Técnico Informático | Estudiante de Programación</p>
-            <div class="contacto">
-                <p>📞 655141488</p>
-                <p>📧 salvilopp10@gmail.com</p>
-            </div>
-        </header>
+<body class="bg-success">
+  <section class="vh-100 d-flex align-items-center bg-success">
+    <div class="container">
+      <div class="row justify-content-center align-items-center g-4">
         
-        <section class="perfil">
-            <h2>Perfil Profesional</h2>
-            <p>Técnico Informático y estudiante de programación multiplataforma con grandes habilidades de autoaprendizaje, grandes habilidades sociales y luchador por sus metas. Conocimientos sobre SQL, Python, Java, PHP, HTML, CSS, Sass, Bootstrap y WordPress, además de conocimientos sobre redes, seguridad informática y experiencia en montaje de equipos microinformáticos.</p>
-        </section>
-        
-        <section class="formacion">
-            <h2>Formación</h2>
-            <ul>
-                <li>Grado Medio en Sistemas Informáticos y Redes (2022 - 2024)</li>
-                <li>Grado Superior en Desarrollo de Aplicaciones Multiplataforma (2024 - 2026)</li>
-            </ul>
-        </section>
-        
-        <section class="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Desarrollo Web</li>
-                <li>Desarrollo Multiplataforma</li>
-                <li>Técnico en Redes LAN</li>
-                <li>Seguridad Informática</li>
-                <li>Montaje de Equipos</li>
-            </ul>
-        </section>
-        
-        <section class="idiomas">
-            <h2>Idiomas</h2>
-            <p>Español: Nativo</p>
-            <p>Inglés: Básico</p>
-        </section>
-        
-        <section class="extras">
-            <h2>Información Adicional</h2>
-            <p>Carnet de conducir A2 y B</p>
-            <p>Año de nacimiento: 2005</p>
-        </section>
+        <div class="col-md-4 text-center text-md-end text-dark">
+          <div>
+            <h1 class="display-4 fw-bold mb-0">Salvador</h1>
+            <h1 class="display-4 fw-bold mb-0">López</h1>
+            <h1 class="display-4 fw-bold mb-3">Trigueros</h1>
+            <p class="text-primary">Full-Stack Developer</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <div class="hover-effect">
+            <img src="ImgPortFolio.png" alt="Profile" class="profile-img shadow">
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center text-md-start">
+          <div class="hover-effect d-flex flex-column">
+            <a href="#about" class="btn btn-outline-primary btn-lg mb-3 py-2 px-4 rounded-pill fw-bold text-dark">About Me</a>
+            <a href="#education" class="btn btn-outline-primary btn-lg mb-3 py-2 px-4 rounded-pill fw-bold text-dark">Education</a>
+            <a href="#career" class="btn btn-outline-primary btn-lg py-2 px-4 rounded-pill fw-bold text-dark">Career</a>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
+  <section id="about" class="py-5 bg-success">
+    <div class="bg-dark card card-body container p-5 text-success">
+        <h1>
+            Hello! I'm Salvador, a passionate developer with a strong background in Java, Python, SQL, CSS ,Sass and Cisco CLI. I love building efficient, scalable, and user-friendly applications that provide real value.
+            I enjoy working with new technologies, embracing challenges, and collaborating on exciting projects. When I'm not coding, you can find me exploring open-source projects, enhancing my skills, or sharing knowledge with the community.
+            Feel free to check out my projects and get in touch!
+        </h1>
+        <br>
+        <ul>
+            <li><h1>📫 Contact me: salvilopp10@gmail.com</h1></li>
+            <br>
+            <li><h1>🔗 GitHub: github.com/sloptri</h1></li>
+        </ul>  
+    </div>
+  </section>
+  <section id="education" class="py-5 bg-success">
+    <div class="bg-dark card container p-5 text-success">
+        <ul>
+            <li class="card-header"><h1>🎓 Education</h1></li>
+            <br>
+            <li><h1>📌   Ies Antonio Gala.</h1></li>
+            <br>
+            <li>
+                <ul>
+                    <li><h1>Degree in Microcomputer and network systems technician.</h1></li>
+                    <li><h1>2022 - 2024</h1></li>
+                </ul>
+            </li>
+            <br>
+            <li><h1>📌   Ies Antonio Gala.</h1></li>
+            <br>
+            <li>
+                <ul>
+                    <li><h1>Degree in Cross-platform application development.</h1></li>
+                    <li><h1>2024 - 2026</h1></li>
+                </ul>
+            </li>
+        </ul> 
+    </div>
+  </section>
+  <section id="career" class="py-5 bg-success">
+    <div class="bg-dark card container p-5 text-success text-success">
+        <ul>
+            <li class="card-header"><h1>💼 Career</h1></li>
+            <br>
+            <li><h1>📌   Colour Technology.</h1></li>
+            <br>
+            <li>
+                <ul>
+                    <li><h1>Microcomputer and network systems technician.</h1></li>
+                </ul>
+            </li>
+            <br>
+            <li><h1>📌   Evirom - Soluciones integrales en la nube.</h1></li>
+            <br>
+            <li>
+                <ul>
+                    <li><h1>FullStack web developer intern.</h1></li>
+                </ul>
+            </li>
+            <br>
+            <li><h1>📌   OidoKocina ( Actual ).</h1></li>
+            <br>
+            <li>
+                <ul>
+                    <li><h1>Food-Delivery driver.</h1></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+  </section>
+  <footer id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center py-4">
+      <h3 class="mb-4">Get in Touch</h3>
+      <div class="d-flex justify-content-center gap-3 mb-4">
+        <a href="mailto:salvilopp10@gmail.com" class="btn btn-outline-light rounded-pill px-4">
+          <i class="bi bi-envelope me-2"></i>Email
+        </a>
+        <a href="https://github.com/sloptri" class="btn btn-outline-light rounded-pill px-4">
+          <i class="bi bi-github me-2"></i>GitHub
+        </a>
+      </div>
+      <p class="mb-0">© 2025 Salvador López Trigueros</p>
+    </div>
+  </footer>
+
+  <script src="bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
