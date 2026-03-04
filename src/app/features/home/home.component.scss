@@ -189,9 +189,21 @@
 .mb-1 { margin-bottom: 0.5rem; }
 
 @media (max-width: 768px) {
+  .hero-content {
+    padding: 2rem 1rem;
+  }
   .hero-title {
     font-size: 2.2rem;
   }
+  
+  /* Fix terminal title overlapping mac dots on small width */
+  .terminal-title {
+    position: static;
+    transform: none;
+    margin-left: auto;
+    font-size: 0.75rem;
+  }
+  
   .timeline {
     padding-left: 1.25rem;
     
