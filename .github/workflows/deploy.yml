@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - gh-pages
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -19,4 +19,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist/sloptri.github.io/browser
-          branch: gh-pages
+          branch: master
