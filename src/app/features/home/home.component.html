@@ -1,0 +1,52 @@
+<section class="hero-section container">
+  <div class="hero-content glass-panel">
+    <h2 class="hero-name text-java code-font">{{ aboutInfo().name }}</h2>
+    <h1 class="hero-title">{{ aboutInfo().title }}</h1>
+    <p class="hero-subtitle text-muted">{{ aboutInfo().subtitle }}</p>
+    
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title code-font text-muted">guest&#64;sloptri: ~</span>
+      </div>
+      <div class="terminal-body code-font">
+        <span class="prompt text-neon">❯</span>
+        <span class="command">./show_interests.sh</span>
+        <br>
+        <div class="output mt-1 text-java">
+          Loading module: [ <span class="typing">{{ typingText() }}</span><span class="cursor">_</span> ]
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="experience-section container">
+  <h2 class="section-title text-neon code-font">>&nbsp;Experience_Timeline</h2>
+  
+  <div class="timeline">
+    @for (exp of experiences(); track exp.id) {
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content glass-panel">
+          <div class="timeline-header flex-between mb-1">
+            <h3 class="company-name">{{ exp.company }}</h3>
+            <span class="timeline-date code-font text-muted">{{ exp.date }}</span>
+          </div>
+          <h4 class="role-title text-java code-font">{{ exp.role }}</h4>
+          <p class="description text-muted mt-2">{{ exp.description }}</p>
+          
+          @if (exp.tech) {
+            <div class="stack-tags mt-2">
+              @for (tech of exp.tech; track tech) {
+                <span class="tag code-font">{{ tech }}</span>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

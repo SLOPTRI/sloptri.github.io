@@ -1,0 +1,131 @@
+.about-section {
+  padding-top: 1rem;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.intro-glass {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-left: 4px solid var(--accent-blue);
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.edu-card {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 115, 150, 0.1);
+    border-color: var(--accent-blue);
+  }
+}
+
+.edu-icon {
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.edu-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+  transition: color 0.3s ease;
+}
+
+.edu-card:hover .edu-title {
+  color: var(--accent-blue);
+}
+
+.edu-date {
+  font-size: 0.85rem;
+  border: 1px solid var(--card-border);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.edu-desc {
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Profile Details & Skills Grid */
+.bio-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.profile-details {
+  border-top: 1px dashed var(--card-border);
+  padding-top: 1.5rem;
+  font-size: 0.95rem;
+
+  .text-main {
+    color: var(--text-main);
+    font-weight: 500;
+  }
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-badge {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(48, 209, 88, 0.2);
+  background: rgba(48, 209, 88, 0.05);
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: var(--accent-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(48, 209, 88, 0.1);
+  }
+}
+
+.skill-name {
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.skill-category {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.line-height-lg { line-height: 1.6; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mt-4 { margin-top: 2rem; }

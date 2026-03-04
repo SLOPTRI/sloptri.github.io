@@ -1,0 +1,42 @@
+<section class="about-section container">
+  <div class="about-content">
+    <h2 class="section-title text-neon code-font">>&nbsp;Profile_&_Bio</h2>
+    
+    <div class="intro-glass glass-panel mb-4">
+      <p class="text-muted mb-2 bio-text">{{ aboutInfo().bio }}</p>
+      
+      <div class="profile-details mt-4 code-font text-java">
+        <p class="mb-1"><strong class="text-main">Languages:</strong> {{ aboutInfo().languages.join(' | ') }}</p>
+        <p><strong class="text-main">Availability:</strong> {{ aboutInfo().availability }}</p>
+      </div>
+    </div>
+
+    <h2 class="section-title text-neon code-font mt-4">>&nbsp;Tech_Stack</h2>
+    <div class="skills-grid mb-4">
+      @for (skill of skills(); track skill.name) {
+        <div class="skill-badge glass-panel">
+          <span class="skill-name">{{ skill.name }}</span>
+          <span class="skill-category text-muted code-font">{{ skill.category }}</span>
+        </div>
+      }
+    </div>
+
+    <h2 class="section-title text-neon code-font mt-4">>&nbsp;Education_&_Certifications</h2>
+    <div class="education-grid">
+      @for (edu of education(); track edu.title) {
+        <div class="edu-card glass-panel group">
+          <div class="edu-icon text-java">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h3 class="edu-title">{{ edu.title }}</h3>
+          
+          @if (edu.date) {
+            <span class="edu-date code-font text-muted mb-2">{{ edu.date }}</span>
+          }
+          
+          <p class="edu-desc text-muted line-height-lg">{{ edu.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
