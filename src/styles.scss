@@ -109,3 +109,23 @@ a:focus-visible {
   outline: 2px solid var(--accent-green);
   outline-offset: 4px;
 }
+
+/* Base Responsive Fixes for Mobile Scaling */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 1rem; // Reduce padding on small screens
+  }
+
+  .glass-panel {
+    border-radius: 12px;
+  }
+  
+  h1 { font-size: 2.5rem !important; }
+  h2 { font-size: 1.8rem !important; }
+  h3 { font-size: 1.3rem !important; }
+}

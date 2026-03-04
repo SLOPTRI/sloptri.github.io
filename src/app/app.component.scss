@@ -116,14 +116,75 @@ footer {
   }
 }
 
+.mobile-menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 2000;
+}
+
+.mobile-actions {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
 @media (max-width: 768px) {
-  .desktop-nav {
-    display: none; // Would normally implement a hamburger menu here
+  .desktop-only {
+    display: none !important;
   }
   
-  .header-actions {
-    .btn-download span {
-      display: none; // Icon only on mobile
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-actions .btn-download span {
+    display: none; // Icon only on mobile
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    z-index: 1500;
+    
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.mobile-open {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0);
     }
+    
+    a {
+      font-size: 1.5rem;
+    }
+  }
+
+  .mobile-actions {
+    display: flex;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--card-border);
+    width: 60%;
+    justify-content: center;
   }
 }

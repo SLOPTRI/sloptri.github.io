@@ -14,6 +14,7 @@ jobs:
         run: |
           npm install
           npx ng build --configuration production --base-href /
+          cp dist/sloptri-portfolio/browser/index.html dist/sloptri-portfolio/browser/404.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
