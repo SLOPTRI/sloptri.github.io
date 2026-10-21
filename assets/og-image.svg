@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="#0A0A0A" />
+
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M 56 0 L 0 0 0 56" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1" />
+    </pattern>
+    <radialGradient id="cyan-glow" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient glow and grid overlay -->
+  <rect width="1200" height="630" fill="url(#cyan-glow)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+
+  <!-- Subtle outer border -->
+  <rect x="24" y="24" width="1152" height="582" rx="24" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+
+  <!-- Monogram badge -->
+  <g transform="translate(100, 120)">
+    <rect width="76" height="76" rx="18" fill="rgba(255,255,255,0.03)" stroke="#22d3ee" stroke-width="1.5" stroke-opacity="0.6" />
+    <text x="38" y="47" text-anchor="middle" font-family="Space Grotesk, Inter, sans-serif" font-weight="700" font-size="28" fill="#22d3ee">SL</text>
+  </g>
+
+  <!-- Status pill -->
+  <g transform="translate(196, 142)">
+    <rect width="280" height="34" rx="17" fill="rgba(255,255,255,0.03)" stroke="#27272a" stroke-width="1" />
+    <circle cx="20" cy="17" r="4.5" fill="#34d399" />
+    <text x="34" y="22" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#a1a1aa">Machine Learning &amp; Data Science</text>
+  </g>
+
+  <!-- Name -->
+  <text x="100" y="290" font-family="Space Grotesk, Inter, sans-serif" font-weight="700" font-size="64" fill="#ffffff" letter-spacing="-0.03em">
+    Salvador López Trigueros
+  </text>
+
+  <!-- Tagline / Title -->
+  <text x="100" y="356" font-family="Space Grotesk, Inter, sans-serif" font-weight="600" font-size="32" fill="#22d3ee" letter-spacing="-0.01em">
+    Machine Learning &amp; Data Science
+  </text>
+
+  <!-- Bio / Background -->
+  <text x="100" y="415" font-family="Inter, sans-serif" font-size="21" fill="#9ca3af" font-weight="400">
+    Python · SQL · Scikit-Learn | Software Engineering background (Java &amp; Spring Boot)
+  </text>
+
+  <!-- Tech tags row -->
+  <g transform="translate(100, 480)">
+    <!-- Python -->
+    <rect x="0" y="0" width="94" height="36" rx="8" fill="rgba(255,255,255,0.02)" stroke="#27272a" stroke-width="1" />
+    <text x="47" y="23" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#d1d5db">Python</text>
+
+    <!-- Scikit-Learn -->
+    <rect x="106" y="0" width="138" height="36" rx="8" fill="rgba(255,255,255,0.02)" stroke="#27272a" stroke-width="1" />
+    <text x="175" y="23" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#d1d5db">Scikit-Learn</text>
+
+    <!-- Machine Learning -->
+    <rect x="256" y="0" width="170" height="36" rx="8" fill="rgba(255,255,255,0.02)" stroke="#27272a" stroke-width="1" />
+    <text x="341" y="23" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#d1d5db">Machine Learning</text>
+
+    <!-- Java -->
+    <rect x="438" y="0" width="100" height="36" rx="8" fill="rgba(248,152,32,0.08)" stroke="rgba(248,152,32,0.3)" stroke-width="1" />
+    <text x="488" y="23" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#f89820">Java 21</text>
+
+    <!-- Android -->
+    <rect x="550" y="0" width="104" height="36" rx="8" fill="rgba(255,255,255,0.02)" stroke="#27272a" stroke-width="1" />
+    <text x="602" y="23" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#d1d5db">Android</text>
+  </g>
+
+  <!-- Canonical link -->
+  <text x="1090" y="555" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="14" fill="#6b7280">
+    sloptri.github.io
+  </text>
+</svg>

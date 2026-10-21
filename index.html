@@ -1,13 +1,1385 @@
-<!doctype html>
-<html lang="en" data-beasties-container>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
 <head>
-  <meta charset="utf-8">
-  <title>Salvador López | Multiplatform Software Developer Portfolio</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Backend Developer specializing in Spring Boot, Native Android architectures, and AI integration. Building robust solutions.">
-<style>@font-face{font-family:Fira Code;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Fira Code;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Fira Code;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Fira Code;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Fira Code;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bhZ_Wmh2uX.woff2) format("woff2");unicode-range:U+2000-2001,U+2004-2008,U+200A,U+23B8-23BD,U+2500-259F}@font-face{font-family:Fira Code;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Fira Code;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Fira Code;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Fira Code;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Fira Code;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Fira Code;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Fira Code;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bhZ_Wmh2uX.woff2) format("woff2");unicode-range:U+2000-2001,U+2004-2008,U+200A,U+23B8-23BD,U+2500-259F}@font-face{font-family:Fira Code;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Fira Code;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Fira Code;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Fira Code;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Fira Code;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Fira Code;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Fira Code;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bhZ_Wmh2uX.woff2) format("woff2");unicode-range:U+2000-2001,U+2004-2008,U+200A,U+23B8-23BD,U+2500-259F}@font-face{font-family:Fira Code;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Fira Code;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v27/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}:root{--bg-color:#0d1117;--text-main:#e6edf3;--text-muted:#8b949e;--accent-green:#30d158;--accent-blue:#007396;--card-bg:rgba(22, 27, 34, .65);--card-border:rgba(48, 209, 88, .15);--font-sans:"Inter", sans-serif;--font-mono:"Fira Code", monospace}*{margin:0;padding:0;box-sizing:border-box}body{background-color:var(--bg-color);color:var(--text-main);font-family:var(--font-sans);min-height:100vh;transition:background-color .3s ease,color .3s ease;position:relative;overflow-x:hidden}body:before{content:"";position:fixed;top:0;left:0;width:100vw;height:100vh;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:40px 40px;z-index:-1;pointer-events:none}@media (max-width: 768px){html,body{overflow-x:hidden;width:100%}}</style><link rel="stylesheet" href="styles-YFVZS36O.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-YFVZS36O.css"></noscript></head>
-<body>
-  <app-root></app-root>
-<link rel="modulepreload" href="chunk-IP4LPITF.js"><script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-3KEIDT62.js" type="module"></script></body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salvador López Trigueros · Machine Learning & Data Science</title>
+  <meta name="description"
+    content="Portfolio of Salvador López Trigueros: Machine Learning and Data Science with Python, SQL and Scikit-Learn, built on a software engineering foundation in Java and Spring Boot." />
+  <meta name="author" content="Salvador López Trigueros" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Salvador López Trigueros" />
+  <meta property="og:title" content="Salvador López Trigueros · ML & Data Science" />
+  <meta property="og:description"
+    content="Machine Learning & Data Science | Python, SQL, Scikit-Learn | Software Engineering background (Java)." />
+  <meta property="og:url" content="https://sloptri.github.io/" />
+  <meta property="og:image" content="https://sloptri.github.io/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Salvador López Trigueros — Machine Learning & Data Science" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Salvador López Trigueros · ML & Data Science" />
+  <meta name="twitter:description"
+    content="Machine Learning & Data Science | Python, SQL, Scikit-Learn | Software Engineering background (Java)." />
+  <meta name="twitter:image" content="https://sloptri.github.io/assets/og-image.png" />
+  <link rel="canonical" href="https://sloptri.github.io/" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Salvador López Trigueros",
+      "url": "https://sloptri.github.io/",
+      "email": "mailto:salvilopp10@gmail.com",
+      "jobTitle": "Software Developer · Machine Learning & Data Science",
+      "sameAs": [
+        "https://www.linkedin.com/in/salvador-l%C3%B3pez-trigueros-dev/",
+        "https://github.com/sloptri"
+      ],
+      "knowsAbout": ["Machine Learning", "Data Science", "Python", "SQL", "Scikit-Learn", "Java", "Android"]
+    }
+  </script>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0A0A'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%2322d3ee'%3ESL%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN, zero build-step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['"Space Grotesk"', 'Inter', 'ui-sans-serif', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+          },
+          colors: {
+            ink: { 950: '#0A0A0A', 900: '#111111', 850: '#161616' },
+            accent: { DEFAULT: '#22d3ee', soft: '#67e8f9', deep: '#0891b2' },
+            java: '#f89820',
+          },
+          boxShadow: {
+            soft: '0 1px 0 0 rgba(255,255,255,0.08) inset, 0 20px 40px -24px rgba(0,0,0,0.85)',
+            glow: '0 0 0 1px rgba(34,211,238,0.35), 0 10px 40px -10px rgba(34,211,238,0.45)',
+            'glow-lg': '0 0 0 1px rgba(34,211,238,0.5), 0 20px 50px -10px rgba(34,211,238,0.55)',
+          },
+        },
+      },
+    };
+    document.documentElement.classList.add('js');
+  </script>
+
+  <style>
+    :root {
+      --accent: 34 211 238;
+    }
+
+    html {
+      scroll-padding-top: 5.5rem;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #0A0A0A;
+      background-image: radial-gradient(ellipse 90% 60% at 50% 0%, #0d1722 0%, #0A0A0A 60%);
+      background-attachment: scroll;
+    }
+
+    ::selection {
+      background: rgb(var(--accent) / 0.35);
+      color: #fff;
+    }
+
+    /* Background: subtle grid + ambient glow */
+    .bg-grid {
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(ellipse 80% 70% at 50% 15%, #000 40%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 15%, #000 40%, transparent 85%);
+    }
+
+    .glow-orb {
+      background: radial-gradient(closest-side, rgb(var(--accent) / 0.22) 0%, rgb(14 165 233 / 0.10) 50%, transparent 100%);
+      filter: blur(55px);
+    }
+
+    /* Card spotlight that follows the cursor */
+    .spotlight {
+      position: relative;
+      isolation: isolate;
+      transition: border-color .3s ease, box-shadow .3s ease;
+    }
+
+    .spotlight::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      z-index: -1;
+      background: radial-gradient(480px circle at var(--x, 50%) var(--y, 50%), rgb(var(--accent) / 0.16) 0%, transparent 55%);
+      opacity: 0;
+      transition: opacity .35s ease;
+      pointer-events: none;
+    }
+
+    .spotlight:hover::before {
+      opacity: 1;
+    }
+
+    .spotlight:hover {
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.12) inset, 0 20px 40px -20px rgba(0, 0, 0, 0.9), 0 0 28px -6px rgb(var(--accent) / 0.16);
+    }
+
+    /* Reveal on scroll */
+    .js .reveal {
+      opacity: 0;
+      transform: translate3d(0, 24px, 0);
+      transition: opacity .9s cubic-bezier(.16, 1, .3, 1), transform .9s cubic-bezier(.16, 1, .3, 1);
+      transition-delay: var(--d, 0ms);
+      will-change: opacity, transform;
+    }
+
+    .js .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* Nav link underline */
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      height: 1px;
+      margin: auto;
+      width: 0;
+      background: rgb(var(--accent));
+      transition: width .3s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-link.active {
+      color: #fff;
+    }
+
+    /* Status pulse */
+    @keyframes ping-soft {
+      0% {
+        transform: scale(1);
+        opacity: .7;
+      }
+
+      80%,
+      100% {
+        transform: scale(2.4);
+        opacity: 0;
+      }
+    }
+
+    .ping-soft {
+      animation: ping-soft 2s cubic-bezier(0, 0, .2, 1) infinite;
+    }
+
+    /* Cursor blink in code card */
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .caret {
+      animation: blink 1.1s steps(1) infinite;
+    }
+
+    /* Staggered pop-in (confusion matrix, SCalc data model) + recall bar */
+    @keyframes cell-in {
+      from {
+        opacity: 0;
+        transform: scale(.6);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .is-visible .cell {
+      animation: cell-in .7s cubic-bezier(.16, 1, .3, 1) both;
+      animation-delay: var(--bd, 0ms);
+    }
+
+    @keyframes grow-x {
+      from {
+        transform: scaleX(0);
+      }
+
+      to {
+        transform: scaleX(1);
+      }
+    }
+
+    .is-visible .bar-x {
+      animation: grow-x 1.4s cubic-bezier(.16, 1, .3, 1) both;
+      animation-delay: 300ms;
+    }
+
+    .bar-x {
+      transform-origin: left;
+    }
+
+    /* Accessible disclosure (details/summary) */
+    .disclosure>summary {
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .disclosure>summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .disclosure>summary .chev {
+      transition: transform .3s ease;
+    }
+
+    .disclosure[open]>summary .chev {
+      transform: rotate(180deg);
+    }
+
+    .disclosure>summary:focus-visible {
+      outline: 2px solid rgb(var(--accent) / 0.6);
+      outline-offset: 3px;
+      border-radius: .5rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .js .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .ping-soft,
+      .caret,
+      .is-visible .cell,
+      .is-visible .bar-x {
+        animation: none;
+      }
+
+      .disclosure>summary .chev {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-ink-950 text-gray-300 font-sans leading-relaxed overflow-x-hidden">
+
+  <!-- Scroll progress -->
+  <div id="scroll-progress"
+    class="fixed top-0 left-0 z-[60] h-px w-full origin-left scale-x-0 bg-gradient-to-r from-accent-deep via-accent to-accent-soft"
+    aria-hidden="true"></div>
+
+  <!-- Ambient background (scrolls with the hero, not fixed) -->
+  <div class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[120svh] min-h-[760px] overflow-hidden"
+    aria-hidden="true">
+    <div class="absolute inset-0 bg-grid"></div>
+    <div class="glow-orb absolute -top-36 left-1/2 h-[560px] w-[900px] max-w-[140vw] -translate-x-1/2"></div>
+    <div class="absolute top-44 right-[12%] h-[320px] w-[320px] rounded-full bg-accent/10 blur-[85px]"></div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8" aria-label="Main navigation">
+      <a href="#home" id="nav-logo" aria-label="Salvador López — back to top"
+        class="group flex items-center gap-2.5 font-display text-sm font-semibold tracking-tight text-white">
+        <span
+          class="grid h-8 w-8 place-items-center rounded-lg border border-accent/40 bg-accent/[0.08] text-accent shadow-[0_0_12px_rgba(34,211,238,0.2)] transition group-hover:border-accent group-hover:shadow-glow">SL</span>
+        <span class="hidden sm:inline">Salvador López</span>
+      </a>
+
+      <ul class="hidden items-center gap-8 text-sm text-gray-300 md:flex">
+        <li><a href="#about" class="nav-link transition-colors hover:text-white" data-section="about">About</a></li>
+        <li><a href="#experience" class="nav-link transition-colors hover:text-white"
+            data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link transition-colors hover:text-white" data-section="projects">Projects</a>
+        </li>
+        <li><a href="#education" class="nav-link transition-colors hover:text-white"
+            data-section="education">Education</a></li>
+        <li><a href="#skills" class="nav-link transition-colors hover:text-white" data-section="skills">Skills</a></li>
+        <li>
+          <a href="cv_salvador_lopez.pdf" download="cv_salvador_lopez.pdf" id="nav-cv"
+            class="inline-flex items-center gap-1 transition-colors hover:text-accent" aria-label="Download CV (PDF)">
+            CV
+            <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="#contact" id="nav-cta"
+          class="hidden rounded-full border border-white/[0.1] bg-white/[0.04] px-4 py-2 text-sm font-medium text-white transition hover:border-accent/60 hover:text-accent hover:shadow-[0_0_16px_rgba(34,211,238,0.25)] md:inline-flex">Contact</a>
+        <button id="menu-toggle" type="button"
+          class="grid h-10 w-10 place-items-center rounded-lg border border-gray-800 bg-white/[0.03] text-gray-300 md:hidden"
+          aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+          <svg id="icon-menu" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h10" />
+          </svg>
+          <svg id="icon-close" class="hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu"
+      class="pointer-events-none mx-4 -translate-y-2 rounded-2xl border border-gray-800 bg-ink-900/95 p-2 opacity-0 backdrop-blur-xl transition-all duration-300 md:hidden"
+      aria-label="Mobile navigation">
+      <ul class="flex flex-col text-[15px] text-gray-300">
+        <li><a href="#about"
+            class="mobile-link block rounded-xl px-4 py-3 hover:bg-white/[0.04] hover:text-white">About</a></li>
+        <li><a href="#experience"
+            class="mobile-link block rounded-xl px-4 py-3 hover:bg-white/[0.04] hover:text-white">Experience</a></li>
+        <li><a href="#projects"
+            class="mobile-link block rounded-xl px-4 py-3 hover:bg-white/[0.04] hover:text-white">Projects</a></li>
+        <li><a href="#education"
+            class="mobile-link block rounded-xl px-4 py-3 hover:bg-white/[0.04] hover:text-white">Education</a></li>
+        <li><a href="#skills"
+            class="mobile-link block rounded-xl px-4 py-3 hover:bg-white/[0.04] hover:text-white">Skills</a></li>
+        <li><a href="cv_salvador_lopez.pdf" download="cv_salvador_lopez.pdf" id="mobile-cv"
+            class="mobile-link block rounded-xl px-4 py-3 hover:bg-white/[0.04] hover:text-white">Download CV <span
+              class="text-gray-500">(PDF)</span></a></li>
+        <li><a href="#contact" class="mobile-link block rounded-xl px-4 py-3 text-accent hover:bg-white/[0.04]">Contact
+            →</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" aria-label="Introduction"
+      class="relative mx-auto flex min-h-[100svh] max-w-6xl items-center px-5 pb-20 pt-32 sm:px-8 lg:pt-28">
+      <div class="grid w-full items-center gap-14 lg:grid-cols-12">
+        <div class="lg:col-span-7">
+          <div
+            class="reveal mb-7 inline-flex items-center gap-2.5 rounded-full border border-white/[0.08] bg-white/[0.035] px-3.5 py-1.5 text-xs text-gray-300 backdrop-blur-sm shadow-[0_1px_0_0_rgba(255,255,255,0.06)_inset]">
+            <span class="relative flex h-2 w-2">
+              <span class="ping-soft absolute inline-flex h-full w-full rounded-full bg-emerald-400"></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+            </span>
+            Open to opportunities in ML &amp; Data
+            <span class="text-gray-400">· Remote · Europe / On-Site · Spain </span>
+          </div>
+
+          <h1
+            class="reveal font-display text-4xl font-semibold tracking-tight text-white sm:text-6xl lg:text-[4.25rem] lg:leading-[1.05]"
+            style="--d:80ms">
+            Salvador López<br class="hidden sm:block" />
+            <span class="bg-gradient-to-r from-white via-cyan-100 to-accent bg-clip-text text-transparent">
+              Trigueros</span>
+          </h1>
+
+          <p class="reveal mt-6 font-display text-lg font-medium text-white sm:text-xl" style="--d:160ms">
+            <span class="text-accent drop-shadow-[0_0_14px_rgba(34,211,238,0.35)]">Machine Learning &amp; Data Science</span>
+          </p>
+          <div class="reveal mt-3 flex flex-wrap items-center gap-2 font-mono text-xs text-gray-300" style="--d:200ms">
+            <span class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Python</span>
+            <span class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">SQL</span>
+            <span class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Scikit-Learn</span>
+            <span class="text-gray-600">|</span>
+            <span class="rounded-md border border-java/40 bg-java/[0.08] px-2.5 py-1 text-java font-medium">Software Engineering
+              background (Java)</span>
+          </div>
+
+          <p class="reveal mt-7 max-w-xl text-[15px] leading-7 text-gray-300 sm:text-base" style="--d:260ms">
+            Cross-platform software developer with an analytical mindset and a solid backend foundation in <span
+              class="text-white font-medium">Java and Spring Boot</span>. Today I build <span class="text-white font-medium">Machine
+              Learning</span> projects with Python and Jupyter, and I'm moving into <span class="text-white font-medium">Deep
+              Learning and Computer Vision</span>. Hardware and custom mechanical keyboard enthusiast.
+          </p>
+
+          <div class="reveal mt-9 flex flex-wrap items-center gap-4" style="--d:340ms">
+            <a href="#projects" id="cta-projects"
+              class="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-ink-950 transition hover:shadow-glow hover:brightness-110 shadow-[0_0_24px_-4px_rgba(34,211,238,0.45)]">
+              View Projects
+              <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor"
+                stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a href="cv_salvador_lopez.pdf" download="cv_salvador_lopez.pdf" id="cta-cv"
+              class="group inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-6 py-3 text-sm font-medium text-white transition hover:border-accent/50 hover:text-accent shadow-soft">
+              <svg class="h-4 w-4 transition-transform group-hover:translate-y-0.5" fill="none" stroke="currentColor"
+                stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14" />
+              </svg>
+              Download CV
+            </a>
+            <div class="flex items-center gap-2">
+              <a href="https://www.linkedin.com/in/salvador-l%C3%B3pez-trigueros-dev/" id="hero-linkedin"
+                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)"
+                class="grid h-11 w-11 place-items-center rounded-full border border-white/[0.08] bg-white/[0.03] text-gray-300 transition hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent hover:shadow-[0_0_12px_rgba(34,211,238,0.25)]">
+                <svg class="h-[18px] w-[18px]" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+                </svg>
+              </a>
+              <a href="https://github.com/sloptri" id="hero-github" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub profile (opens in a new tab)"
+                class="grid h-11 w-11 place-items-center rounded-full border border-white/[0.08] bg-white/[0.03] text-gray-300 transition hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent hover:shadow-[0_0_12px_rgba(34,211,238,0.25)]">
+                <svg class="h-[18px] w-[18px]" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.53 11.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5z" />
+                </svg>
+              </a>
+              <a href="mailto:salvilopp10@gmail.com" id="hero-email" aria-label="Send me an email"
+                class="grid h-11 w-11 place-items-center rounded-full border border-white/[0.08] bg-white/[0.03] text-gray-300 transition hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent hover:shadow-[0_0_12px_rgba(34,211,238,0.25)]">
+                <svg class="h-[18px] w-[18px]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <rect x="3" y="5" width="18" height="14" rx="2.5" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4 7 8 6 8-6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code card (decorative) -->
+        <div class="reveal lg:col-span-5" style="--d:420ms" aria-hidden="true">
+          <div
+            class="spotlight relative overflow-hidden rounded-2xl border border-white/[0.08] bg-ink-900/80 shadow-soft backdrop-blur-md">
+            <div class="flex items-center justify-between border-b border-gray-800/80 bg-white/[0.02] px-4 py-3">
+              <div class="flex gap-1.5">
+                <span class="h-2.5 w-2.5 rounded-full bg-rose-500/70"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-amber-500/70"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-emerald-500/70"></span>
+              </div>
+              <span class="font-mono text-[11px] text-gray-400">salvador.ipynb</span>
+              <span class="font-mono text-[11px] text-accent font-medium">Python 3</span>
+            </div>
+            <pre
+              class="overflow-x-auto p-5 font-mono text-[12.5px] leading-6 text-gray-300 sm:text-[13px]"><code><span class="text-gray-500">In [1]:</span> <span class="text-cyan-400">from</span> sklearn.pipeline <span class="text-cyan-400">import</span> Pipeline
+        <span class="text-cyan-400">from</span> career <span class="text-cyan-400">import</span> <span class="text-amber-300">Developer</span>
+
+<span class="text-gray-500">In [2]:</span> salva = <span class="text-amber-300">Developer</span>(
+            name=<span class="text-emerald-300">"Salvador López"</span>,
+            background=<span class="text-emerald-300">"Java · Spring Boot"</span>,
+            focus=[<span class="text-emerald-300">"ML"</span>, <span class="text-emerald-300">"Data Science"</span>],
+            learning=[<span class="text-emerald-300">"DL"</span>, <span class="text-emerald-300">"CV"</span>],
+        )
+
+<span class="text-gray-500">In [3]:</span> salva.<span class="text-accent font-medium">fit</span>(curiosity=<span class="text-orange-300">float</span>(<span class="text-emerald-300">"inf"</span>))
+<span class="text-emerald-400/90 font-medium"># ✓ clean_code=True · ai_assisted=True</span>
+<span class="text-gray-500">Out[3]:</span> <span class="text-white font-medium">learning…</span><span class="caret text-accent">▍</span></code></pre>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about"
+        class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-gray-500 transition hover:text-gray-300 sm:flex"
+        aria-label="Scroll to About section">
+        Scroll
+        <span class="h-8 w-px bg-gradient-to-b from-gray-600 to-transparent"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
+      <header class="reveal mb-12">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+          <span class="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>01 — About
+        </p>
+        <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">From software
+          engineering<br class="hidden sm:block" /> to artificial intelligence.</h2>
+      </header>
+
+      <div class="grid gap-4 md:grid-cols-6">
+        <article
+          class="spotlight reveal rounded-2xl border border-white/[0.08] bg-white/[0.025] p-7 shadow-soft backdrop-blur-sm md:col-span-4 md:row-span-2 sm:p-9">
+          <p class="text-[15px] leading-7 text-gray-300 sm:text-base sm:leading-8">
+            My foundation is <span class="text-white font-medium">software development</span>: two years of <span
+              class="text-java font-medium">Java</span> in my Cross-Platform Application Development degree (DAM), working with
+            <span class="text-white font-medium">Spring Boot</span> and Android, with <span class="text-white font-medium">SCalc</span> as
+            my main project. That's where I learned to design business logic and structure code so it stays
+            maintainable. I now bring the same discipline — thinking in systems, testing, refactoring — to <span
+              class="text-white font-medium">data</span>.
+          </p>
+          <p class="mt-5 text-[15px] leading-7 text-gray-300 sm:text-base sm:leading-8">
+            Today I work on <span class="text-accent font-medium">data analysis and Machine Learning</span> with Python, Pandas and
+            Scikit-Learn in Jupyter, and I'm deepening <span class="text-white font-medium">Deep Learning and Computer
+              Vision</span> through a specialization course in AI and Big Data. I care about <span
+              class="text-white font-medium">Clean Code</span> and use <span class="text-white font-medium">AI-assisted development</span>
+            to iterate faster without cutting corners on quality.
+          </p>
+        </article>
+
+        <div
+          class="spotlight reveal flex flex-col justify-between rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm md:col-span-2"
+          style="--d:80ms" title="Spanish grading scale (0–10)">
+          <span class="font-mono text-[11px] uppercase tracking-[0.18em] text-gray-400">DAM average grade</span>
+          <p class="mt-6 font-display text-5xl font-semibold tracking-tight text-white"><span class="bg-gradient-to-r from-white via-cyan-100 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(34,211,238,0.25)]" data-count="9.2"
+              data-decimals="1">0.0</span><span class="text-2xl text-accent/80 font-medium">/10</span></p>
+        </div>
+
+        <div
+          class="spotlight reveal flex flex-col justify-between rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm md:col-span-2"
+          style="--d:140ms">
+          <span class="font-mono text-[11px] uppercase tracking-[0.18em] text-gray-400">Featured projects</span>
+          <p class="mt-6 font-display text-5xl font-semibold tracking-tight text-white"><span class="bg-gradient-to-r from-white via-cyan-100 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(34,211,238,0.25)]" data-count="3"
+              data-decimals="0">0</span><span class="ml-3 text-sm font-medium text-gray-400">Android · ML · Web</span>
+          </p>
+        </div>
+
+        <div
+          class="spotlight reveal rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm md:col-span-2"
+          style="--d:60ms">
+          <div
+            class="mb-4 grid h-10 w-10 place-items-center rounded-xl border border-accent/30 bg-accent/10 text-accent shadow-[0_0_12px_rgba(34,211,238,0.2)]">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14" />
+            </svg>
+          </div>
+          <h3 class="font-display text-base font-semibold text-white">Clean Code</h3>
+          <p class="mt-1.5 text-sm leading-6 text-gray-400">Readable, testable code with clear responsibilities. SOLID
+            as a starting point.</p>
+        </div>
+
+        <div
+          class="spotlight reveal rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm md:col-span-2"
+          style="--d:120ms">
+          <div
+            class="mb-4 grid h-10 w-10 place-items-center rounded-xl border border-accent/30 bg-accent/10 text-accent shadow-[0_0_12px_rgba(34,211,238,0.2)]">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.36-6.36-2.12 2.12M8.76 15.24l-2.12 2.12m0-11.72 2.12 2.12m6.48 6.48 2.12 2.12" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <h3 class="font-display text-base font-semibold text-white">AI-assisted development</h3>
+          <p class="mt-1.5 text-sm leading-6 text-gray-400">I use LLMs and coding agents as copilots to prototype,
+            review and document faster.</p>
+        </div>
+
+        <div
+          class="spotlight reveal rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm md:col-span-2"
+          style="--d:180ms">
+          <div
+            class="mb-4 grid h-10 w-10 place-items-center rounded-xl border border-accent/30 bg-accent/10 text-accent shadow-[0_0_12px_rgba(34,211,238,0.2)]">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+              <rect x="2.5" y="6" width="19" height="12" rx="2.5" />
+              <path stroke-linecap="round" d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M8 14h8" />
+            </svg>
+          </div>
+          <h3 class="font-display text-base font-semibold text-white">Hardware & Keebs</h3>
+          <p class="mt-1.5 text-sm leading-6 text-gray-400">Hardware tinkerer and custom mechanical keyboard enthusiast
+            — it even made its way into my projects (kbevi).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
+      <header class="reveal mb-12">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+          <span class="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>02 — Experience
+        </p>
+        <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">Professional
+          experience.</h2>
+      </header>
+
+      <ol class="relative ml-2 border-l border-gray-800/90 sm:ml-3">
+        <li class="reveal relative pb-12 pl-8 sm:pl-12">
+          <span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-accent ring-4 ring-ink-950 shadow-[0_0_10px_rgba(34,211,238,0.9)]"></span>
+          <div
+            class="spotlight rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm transition hover:border-accent/40 sm:p-7">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="font-display text-lg font-semibold text-white">Android Developer <span
+                  class="font-normal text-gray-400">· Internship</span></h3>
+              <time class="font-mono text-xs text-gray-400">Oct 2025 — Mar 2026</time>
+            </div>
+            <p class="mt-1 text-sm font-medium text-accent">Dinaprise</p>
+            <p class="mt-4 text-sm leading-6 text-gray-300">Native Android development, backend architecture, and
+              business logic with Java and Spring Boot.</p>
+            <ul class="mt-5 flex flex-wrap gap-2 font-mono text-[11px] text-gray-300">
+              <li class="rounded-md border border-java/40 bg-java/[0.08] px-2.5 py-1 text-java font-medium">Java</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Spring Boot</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Android</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Backend</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="reveal relative pb-12 pl-8 sm:pl-12">
+          <span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-gray-500 ring-4 ring-ink-950"></span>
+          <div
+            class="spotlight rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm transition hover:border-gray-700 sm:p-7">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="font-display text-lg font-semibold text-white">Web Developer <span
+                  class="font-normal text-gray-400">· Internship</span></h3>
+              <time class="font-mono text-xs text-gray-400">Jan 2025 — Mar 2025</time>
+            </div>
+            <p class="mt-1 text-sm font-medium text-accent">Evirom</p>
+            <p class="mt-4 text-sm leading-6 text-gray-300">Built the <span class="text-white font-medium">kbevi</span>
+              mechanical keyboard catalog with PHP, HTML, CSS, and SQL.</p>
+            <ul class="mt-5 flex flex-wrap gap-2 font-mono text-[11px] text-gray-300">
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">PHP</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">HTML</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">CSS</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">SQL</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="reveal relative pl-8 sm:pl-12">
+          <span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-gray-500 ring-4 ring-ink-950"></span>
+          <div
+            class="spotlight rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm transition hover:border-gray-700 sm:p-7">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="font-display text-lg font-semibold text-white">IT Technician <span
+                  class="font-normal text-gray-400">· Internship</span></h3>
+              <time class="font-mono text-xs text-gray-400">Apr 2024 — Jul 2024</time>
+            </div>
+            <p class="mt-1 text-sm font-medium text-accent">Colour Technology</p>
+            <p class="mt-4 text-sm leading-6 text-gray-300">Advanced hardware diagnostics and component-level repair.
+            </p>
+            <ul class="mt-5 flex flex-wrap gap-2 font-mono text-[11px] text-gray-300">
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Hardware</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Diagnostics</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Repair</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
+      <!-- Ambient backlight for projects -->
+      <div class="pointer-events-none absolute left-1/2 top-1/3 -z-10 h-[550px] w-[850px] max-w-full -translate-x-1/2 rounded-full bg-accent/[0.07] blur-[110px]" aria-hidden="true"></div>
+
+      <header class="reveal mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+            <span class="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>03 — Projects
+          </p>
+          <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">Featured projects.
+          </h2>
+        </div>
+        <a href="https://github.com/sloptri" target="_blank" rel="noopener noreferrer" id="projects-github"
+          class="group inline-flex items-center gap-1.5 text-sm font-medium text-gray-300 transition hover:text-accent">
+          View all on GitHub
+          <svg class="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9" />
+          </svg>
+        </a>
+      </header>
+
+      <div class="grid gap-5 md:grid-cols-6">
+        <!-- SCalc -->
+        <article id="project-scalc"
+          class="spotlight reveal group flex flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-soft backdrop-blur-sm transition hover:border-accent/40 md:col-span-3">
+          <!-- Visual header: screenshot fallback to data model diagram -->
+          <div
+            class="relative flex min-h-[13rem] items-center justify-center overflow-hidden border-b border-gray-800/80 bg-gradient-to-b from-accent/[0.08] via-white/[0.02] to-transparent p-5 sm:min-h-[14rem]"
+            aria-label="SCalc architecture and data model">
+            <div class="absolute left-5 top-4 flex items-center gap-2 font-mono text-[11px] text-gray-300">
+              <span class="h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_6px_rgba(34,211,238,0.8)]"></span> €/h · €/order · orders/h
+            </div>
+
+            <!-- Optional phone screenshot with silent removal fallback -->
+            <img src="assets/scalc-1.png" alt="SCalc app screenshot" loading="lazy"
+              class="absolute inset-0 m-auto max-h-[85%] max-w-[85%] rounded-lg object-contain shadow-lg"
+              onerror="this.remove()">
+
+            <!-- Data model diagram: User -> Ticket -> Shift -->
+            <div class="mt-4 flex flex-wrap items-center justify-center gap-2 font-mono text-xs">
+              <div class="rounded-xl border border-white/[0.08] bg-ink-900/90 px-3 py-2 text-center shadow-sm">
+                <span class="block text-[9px] uppercase tracking-wider text-gray-400">Config</span>
+                <span class="font-semibold text-white">User</span>
+                <span class="block text-[9px] text-gray-400">rates/auth</span>
+              </div>
+              <svg class="h-3.5 w-3.5 text-accent/80" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+              <div class="rounded-xl border border-accent/50 bg-accent/[0.12] px-3 py-2 text-center shadow-[0_0_15px_rgba(34,211,238,0.25)]">
+                <span class="block text-[9px] uppercase tracking-wider text-accent font-medium">Monthly</span>
+                <span class="font-semibold text-white">Ticket</span>
+                <span class="block text-[9px] text-accent">frozen total</span>
+              </div>
+              <svg class="h-3.5 w-3.5 text-accent/80" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+              <div class="rounded-xl border border-white/[0.08] bg-ink-900/90 px-3 py-2 text-center shadow-sm">
+                <span class="block text-[9px] uppercase tracking-wider text-gray-400">Daily</span>
+                <span class="font-semibold text-white">Shift</span>
+                <span class="block text-[9px] text-gray-400">hours/orders</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-1 flex-col p-6 sm:p-7">
+            <div class="flex flex-wrap items-center justify-between gap-2.5">
+              <h3 class="font-display text-xl font-semibold text-white">SCalc</h3>
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span
+                  class="inline-flex items-center gap-1.5 rounded-full border border-java/40 bg-java/[0.10] px-2.5 py-1 text-[11px] font-medium text-java shadow-[0_0_10px_rgba(248,152,32,0.15)]">
+                  <span class="h-1.5 w-1.5 rounded-full bg-java"></span> Main project · DAM Final Degree Project
+                </span>
+              </div>
+            </div>
+
+            <p class="mt-4 text-sm leading-6 text-gray-300">
+              Delivery couriers deal with split pay models (hourly wage plus per-order pay) and frequently track
+              earnings in spreadsheets or notes, leading to common miscalculations. SCalc automates monthly pay tracking
+              through customizable pay rates, daily shift logging, and productivity metrics (orders per hour).
+            </p>
+            <p class="mt-3 text-sm leading-6 text-gray-400">
+              Built <span class="text-white font-medium">offline-first</span> with monthly "Tickets" that freeze calculated pay
+              as immutable historical records. Architected around native Android SQLite, a clean DAO pattern, and custom
+              POJOs.
+            </p>
+
+            <ul class="mt-6 flex flex-wrap gap-2 font-mono text-[11px] text-gray-300">
+              <li class="rounded-md border border-java/40 bg-java/[0.08] px-2.5 py-1 text-java font-medium">Java</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Android</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">SQLite</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">DAO Pattern</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Material Design</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Figma</li>
+            </ul>
+
+            <div class="mt-auto border-t border-gray-800/80 pt-5">
+              <a href="https://github.com/SLOPTRI/SCalc" target="_blank" rel="noopener noreferrer"
+                class="group/link inline-flex items-center gap-1.5 text-sm font-medium text-gray-300 transition hover:text-accent">
+                View code
+                <svg
+                  class="h-4 w-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
+                  fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Early Detection: Mental Health ML -->
+        <article id="project-mental-health"
+          class="spotlight reveal group flex flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-soft backdrop-blur-sm transition hover:border-accent/40 md:col-span-3"
+          style="--d:100ms">
+          <!-- Visual header: confusion matrix representation & recall metric -->
+          <div
+            class="relative flex min-h-[13rem] items-center justify-center gap-7 overflow-hidden border-b border-gray-800/80 bg-gradient-to-b from-accent/[0.09] via-white/[0.02] to-transparent px-6 py-6 sm:min-h-[14rem]"
+            aria-label="Machine Learning confusion matrix and recall performance">
+            <div class="absolute left-5 top-4 flex items-center gap-2 font-mono text-[11px] text-gray-300">
+              <span class="h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_6px_rgba(34,211,238,0.8)]"></span> Logistic Regression · Multiclass
+            </div>
+
+            <!-- Decorative 3x3 confusion matrix representation -->
+            <div class="mt-4 grid grid-cols-3 gap-1 transition-transform duration-500 group-hover:scale-105"
+              aria-hidden="true">
+              <span class="cell h-8 w-8 rounded-md bg-accent shadow-[0_0_12px_rgba(34,211,238,0.6)]" style="--bd:0ms" title="Class 0"></span>
+              <span class="cell h-8 w-8 rounded-md bg-accent/[0.14]" style="--bd:60ms"></span>
+              <span class="cell h-8 w-8 rounded-md bg-white/[0.05]" style="--bd:120ms"></span>
+              <span class="cell h-8 w-8 rounded-md bg-accent/[0.18]" style="--bd:60ms"></span>
+              <span class="cell h-8 w-8 rounded-md bg-accent/75 shadow-[0_0_8px_rgba(34,211,238,0.35)]" style="--bd:120ms" title="Class 1"></span>
+              <span class="cell h-8 w-8 rounded-md bg-accent/[0.14]" style="--bd:180ms"></span>
+              <span class="cell h-8 w-8 rounded-md bg-white/[0.05]" style="--bd:120ms"></span>
+              <span class="cell h-8 w-8 rounded-md bg-accent/[0.16]" style="--bd:180ms"></span>
+              <span class="cell h-8 w-8 rounded-md bg-accent/90 shadow-[0_0_10px_rgba(34,211,238,0.5)]" style="--bd:240ms" title="Class 2"></span>
+            </div>
+
+            <div class="mt-4">
+              <p class="font-mono text-[10px] uppercase tracking-[0.18em] text-gray-400">Recall · Negative class</p>
+              <p class="mt-1 font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl"><span class="bg-gradient-to-r from-accent via-accent-soft to-white bg-clip-text text-transparent drop-shadow-[0_0_14px_rgba(34,211,238,0.5)]" data-count="87.9"
+                  data-decimals="1">0.0</span><span class="text-xl text-accent/80 font-medium">%</span></p>
+              <div class="mt-2.5 h-1.5 w-28 overflow-hidden rounded-full bg-white/[0.08]">
+                <div class="bar-x h-full rounded-full bg-gradient-to-r from-accent via-accent-soft to-white shadow-[0_0_14px_rgba(34,211,238,0.7)]" style="width:87.9%"></div>
+              </div>
+              <p class="mt-2 font-mono text-[10px] text-gray-400">29 of 33 critical cases identified</p>
+            </div>
+          </div>
+
+          <div class="flex flex-1 flex-col p-6 sm:p-7">
+            <div class="flex flex-wrap items-center justify-between gap-2.5">
+              <h3 class="font-display text-xl font-semibold text-white">Early Detection: Mental Health ML</h3>
+              <span
+                class="inline-flex items-center gap-1.5 rounded-full border border-accent/35 bg-accent/10 px-2.5 py-1 text-[11px] font-medium text-accent shadow-[0_0_10px_rgba(34,211,238,0.2)]">
+                <span class="h-1.5 w-1.5 rounded-full bg-accent"></span> Multiclass Classification
+              </span>
+            </div>
+
+            <!-- Key facts banner -->
+            <div class="mt-3 flex flex-wrap items-center gap-2 font-mono text-[11px] text-gray-300">
+              <span class="rounded bg-white/[0.035] px-2.5 py-0.5 border border-white/[0.08]">4,500 records · 16 features ·
+                Kaggle</span>
+              <span class="rounded bg-white/[0.035] px-2.5 py-0.5 border border-white/[0.08]">Test set: 736 Beneficial vs 33
+                Negative</span>
+            </div>
+
+            <p class="mt-4 text-sm leading-6 text-gray-300">
+              Multiclass model (Negative / Neutral / Beneficial) designed as an early preventive screening tool for
+              school counselors and universities to assess the impact of social media habits on student well-being and
+              academic performance.
+            </p>
+
+            <blockquote class="my-4 border-l-2 border-accent pl-3.5 text-xs italic leading-relaxed text-gray-200 bg-accent/[0.02] py-1 rounded-r-lg">
+              "Recall is prioritized because, in psychological prevention, the costliest error is a false negative:
+              failing to detect an at-risk student."
+            </blockquote>
+
+            <!-- Model comparison table -->
+            <div class="overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.015]">
+              <table class="w-full text-left font-mono text-xs">
+                <thead class="border-b border-white/[0.08] bg-white/[0.03] text-gray-300">
+                  <tr>
+                    <th class="px-3 py-2 font-normal">Model</th>
+                    <th class="px-3 py-2 font-normal">Macro F1</th>
+                    <th class="px-3 py-2 font-normal">Recall (Neg)</th>
+                    <th class="px-3 py-2 font-normal">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/[0.05] text-gray-300">
+                  <tr>
+                    <td class="px-3 py-2">Random Forest</td>
+                    <td class="px-3 py-2">81%</td>
+                    <td class="px-3 py-2">72.7%</td>
+                    <td class="px-3 py-2 text-gray-400">Baseline</td>
+                  </tr>
+                  <tr class="border-l-2 border-accent bg-accent/[0.08] text-white font-medium">
+                    <td class="px-3 py-2 font-semibold text-white">Logistic Regression</td>
+                    <td class="px-3 py-2 text-accent">84%</td>
+                    <td class="px-3 py-2 font-semibold text-accent">87.9%</td>
+                    <td class="px-3 py-2 font-medium text-accent">✓ Chosen model</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <ul class="mt-4 space-y-2 text-xs leading-5 text-gray-300">
+              <li class="flex gap-2">
+                <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent shadow-[0_0_6px_rgba(34,211,238,0.8)]"></span>
+                <span><strong class="text-white">Data-leakage prevention:</strong> scikit-learn <code
+                    class="text-accent/90">Pipeline</code> and <code class="text-accent/90">ColumnTransformer</code>
+                  encapsulating median imputation, MinMaxScaler, OrdinalEncoder, and OneHotEncoder strictly on training
+                  splits.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent shadow-[0_0_6px_rgba(34,211,238,0.8)]"></span>
+                <span><strong class="text-white">Handling severe imbalance:</strong> hyperparameter tuning via <code
+                    class="text-accent/90">GridSearchCV</code> scoring on <code class="text-accent/90">f1_macro</code>
+                  combined with <code class="text-accent/90">class_weight='balanced'</code>.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent shadow-[0_0_6px_rgba(34,211,238,0.8)]"></span>
+                <span><strong class="text-white">Outlier strategy:</strong> critical profiles (severe insomnia, heavy
+                  depressive indicators) were intentionally preserved as authentic high-risk cases rather than removed
+                  as measurement noise.</span>
+              </li>
+            </ul>
+
+            <!-- Accessible disclosure for methodology & next steps -->
+            <details
+              class="disclosure mt-4 rounded-xl border border-white/[0.08] bg-white/[0.015] p-3 text-xs text-gray-400">
+              <summary class="flex items-center justify-between font-medium text-gray-200">
+                <span>Methodology &amp; next steps</span>
+                <svg class="chev h-4 w-4 text-accent transition-transform" fill="none" stroke="currentColor"
+                  stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="mt-3 space-y-2 border-t border-white/[0.06] pt-3 leading-relaxed text-gray-300">
+                <p><strong class="text-white">Feature engineering:</strong> synthesized compound risk factors like
+                  <code class="text-accent/90">Sleep_Score = sleep duration × sleep quality</code> to capture compounded
+                  physiological fatigue.
+                </p>
+                <p><strong class="text-white">Roadmap:</strong> evaluate synthetic oversampling (SMOTE) on minority
+                  risk classes and cross-validate against longitudinal real-world student datasets.</p>
+              </div>
+            </details>
+
+            <ul class="mt-6 flex flex-wrap gap-2 font-mono text-[11px] text-gray-300">
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Python</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Pandas</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Matplotlib</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Seaborn</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Scikit-Learn</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">Machine Learning</li>
+            </ul>
+
+            <div class="mt-auto border-t border-gray-800/80 pt-5">
+              <a href="https://github.com/SLOPTRI/Student-Social-Media-Impact-ML" target="_blank"
+                rel="noopener noreferrer"
+                class="group/link inline-flex items-center gap-1.5 text-sm font-medium text-gray-300 transition hover:text-accent">
+                View notebook
+                <svg
+                  class="h-4 w-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
+                  fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- kbevi (horizontal layout across 6 columns) -->
+        <article id="project-kbevi"
+          class="spotlight reveal group flex flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-soft backdrop-blur-sm transition hover:border-accent/40 md:col-span-6 md:flex-row"
+          style="--d:120ms">
+          <div
+            class="flex h-48 items-center justify-center border-b border-gray-800/80 bg-gradient-to-b from-white/[0.04] to-transparent md:h-auto md:w-5/12 md:border-b-0 md:border-r"
+            aria-hidden="true">
+            <div class="grid grid-cols-5 gap-1.5 p-6 transition-transform duration-500 group-hover:scale-105">
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-accent bg-accent/35 shadow-[0_0_14px_rgba(34,211,238,0.6)]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="col-span-3 h-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+              <span class="h-7 w-7 rounded-md border border-gray-700/80 bg-white/[0.04]"></span>
+            </div>
+          </div>
+          <div class="flex flex-1 flex-col p-6 sm:p-7 md:w-7/12">
+            <div class="flex flex-wrap items-center justify-between gap-2.5">
+              <h3 class="font-display text-xl font-semibold text-white">kbevi</h3>
+              <span
+                class="rounded-full border border-white/[0.08] bg-white/[0.04] px-2.5 py-0.5 font-mono text-[11px] text-gray-300">Web
+                Catalog &amp; SQL Database</span>
+            </div>
+            <p class="mt-3 text-sm leading-6 text-gray-300">
+              Web catalog for custom mechanical keyboards with dynamic product management backed by a relational SQL
+              database. Built during my internship at Evirom to organize keyboard builds, switch variants, and inventory
+              details.
+            </p>
+            <ul class="mt-6 flex flex-wrap gap-2 font-mono text-[11px] text-gray-300">
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">PHP</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">HTML</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">CSS</li>
+              <li class="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1">SQL</li>
+            </ul>
+            <div class="mt-6 border-t border-gray-800/80 pt-5">
+              <a href="https://github.com/SLOPTRI/KBEVI" target="_blank" rel="noopener noreferrer"
+                class="group/link inline-flex items-center gap-1.5 text-sm font-medium text-gray-300 transition hover:text-accent">
+                View code
+                <svg
+                  class="h-4 w-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
+                  fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Discreet footer note -->
+      <div class="reveal mt-12 text-center font-mono text-xs text-gray-500">
+        More data projects on the way · <a href="https://github.com/sloptri" target="_blank" rel="noopener noreferrer"
+          class="text-gray-400 underline decoration-gray-700 underline-offset-4 transition hover:text-accent hover:decoration-accent">Follow
+          me on GitHub</a>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
+      <header class="reveal mb-12">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+          <span class="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>04 — Education
+        </p>
+        <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">Education &amp;
+          credentials.</h2>
+      </header>
+
+      <div class="grid gap-4 md:grid-cols-3">
+        <article
+          class="spotlight reveal flex flex-col rounded-2xl border border-accent/35 bg-accent/[0.05] p-6 shadow-[0_0_24px_-8px_rgba(34,211,238,0.2)] backdrop-blur-sm transition hover:border-accent/60 sm:p-7">
+          <div class="flex items-center justify-between">
+            <time class="font-mono text-xs text-gray-400">2026 — 2027</time>
+            <span
+              class="rounded-full border border-accent/40 bg-accent/15 px-2.5 py-0.5 text-[11px] font-medium text-accent shadow-[0_0_10px_rgba(34,211,238,0.3)]">In
+              progress</span>
+          </div>
+          <h3 class="mt-5 font-display text-lg font-semibold leading-snug text-white">Specialization Course in AI &amp;
+            Big Data</h3>
+          <p class="mt-2 text-xs text-gray-300 leading-relaxed">Advanced postgraduate specialization focusing on deep learning,
+            predictive pipelines, and data systems.</p>
+          <p class="mt-auto pt-4 text-sm font-medium text-accent">Planeta FP</p>
+        </article>
+
+        <article
+          class="spotlight reveal flex flex-col rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm transition hover:border-accent/40 sm:p-7"
+          style="--d:80ms">
+          <div class="flex items-center justify-between">
+            <time class="font-mono text-xs text-gray-400">2024 — 2026</time>
+            <span
+              class="rounded-full border border-white/[0.1] bg-white/[0.04] px-2.5 py-0.5 font-mono text-[11px] text-white font-medium"
+              title="Spanish grading scale (0–10)">Grade 9.2/10</span>
+          </div>
+          <h3 class="mt-5 font-display text-lg font-semibold leading-snug text-white">Higher Vocational Degree (CFGS) in
+            Cross-Platform Application Development (DAM)</h3>
+          <p class="mt-2 text-xs text-gray-300 leading-relaxed">Core software engineering: Java, Spring Boot, Android, SQL
+            architectures, and clean code.</p>
+          <p class="mt-auto pt-4 text-sm font-medium text-gray-200">IES Antonio Gala</p>
+        </article>
+
+        <article
+          class="spotlight reveal flex flex-col rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm transition hover:border-accent/40 sm:p-7"
+          style="--d:160ms">
+          <div class="flex items-center justify-between">
+            <time class="font-mono text-xs text-gray-400">2022 — 2024</time>
+            <span
+              class="rounded-full border border-white/[0.1] bg-white/[0.04] px-2.5 py-0.5 font-mono text-[11px] text-white font-medium"
+              title="Spanish grading scale (0–10)">Grade 9.1/10</span>
+          </div>
+          <h3 class="mt-5 font-display text-lg font-semibold leading-snug text-white">Intermediate Vocational Degree
+            (CFGM) in Microcomputer Systems &amp; Networks (SMR)</h3>
+          <p class="mt-2 text-xs text-gray-300 leading-relaxed">Hardware diagnostics, computer networks, server administration, and
+            low-level troubleshooting.</p>
+          <p class="mt-auto pt-4 text-sm font-medium text-gray-200">IES Antonio Gala</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
+      <header class="reveal mb-12">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+          <span class="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>05 — Skills
+        </p>
+        <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">Technical stack.</h2>
+      </header>
+
+      <div class="grid gap-5 md:grid-cols-2">
+        <!-- Data & AI -->
+        <div
+          class="spotlight reveal flex flex-col rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm sm:p-8">
+          <div class="mb-6 flex items-center gap-3">
+            <span class="grid h-9 w-9 place-items-center rounded-lg border border-accent/35 bg-accent/10 text-accent shadow-[0_0_12px_rgba(34,211,238,0.25)]">
+              <svg class="h-[18px] w-[18px]" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.5 3.5a2.5 2.5 0 0 0-2.45 3A3 3 0 0 0 5 12a3 3 0 0 0 1.5 5.2A2.5 2.5 0 0 0 12 18V5a2 2 0 0 0-2.5-1.5zM14.5 3.5a2.5 2.5 0 0 1 2.45 3A3 3 0 0 1 19 12a3 3 0 0 1-1.5 5.2A2.5 2.5 0 0 1 12 18" />
+              </svg>
+            </span>
+            <h3 class="font-display text-lg font-semibold text-white">Data &amp; AI</h3>
+          </div>
+
+          <ul class="flex flex-wrap gap-2 text-sm">
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent hover:bg-accent/[0.06]">
+              Python</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent hover:bg-accent/[0.06]">
+              Pandas</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent hover:bg-accent/[0.06]">
+              Scikit-Learn</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent hover:bg-accent/[0.06]">
+              Machine Learning</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent hover:bg-accent/[0.06]">
+              Jupyter</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent hover:bg-accent/[0.06]">
+              Matplotlib</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent hover:bg-accent/[0.06]">
+              Seaborn</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent hover:bg-accent/[0.06]">
+              SQL</li>
+          </ul>
+
+          <!-- Currently learning sub-block -->
+          <div class="mt-6 border-t border-gray-800/80 pt-5">
+            <span class="mb-3 block font-mono text-[11px] uppercase tracking-wider text-gray-400">Currently learning (AI
+              &amp; Big Data course)</span>
+            <ul class="flex flex-wrap gap-2 text-sm">
+              <li
+                class="cursor-default rounded-lg border border-dashed border-accent/40 bg-accent/[0.04] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent hover:text-accent">
+                Deep Learning</li>
+              <li
+                class="cursor-default rounded-lg border border-dashed border-accent/40 bg-accent/[0.04] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-accent hover:text-accent">
+                Computer Vision</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Software & Backend -->
+        <div
+          class="spotlight reveal flex flex-col rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm sm:p-8"
+          style="--d:100ms">
+          <div class="mb-6 flex items-center gap-3">
+            <span class="grid h-9 w-9 place-items-center rounded-lg border border-java/40 bg-java/10 text-java shadow-[0_0_12px_rgba(248,152,32,0.25)]">
+              <svg class="h-[18px] w-[18px]" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <rect x="3" y="4" width="18" height="6" rx="1.5" />
+                <rect x="3" y="14" width="18" height="6" rx="1.5" />
+                <path stroke-linecap="round" d="M7 7h.01M7 17h.01" />
+              </svg>
+            </span>
+            <h3 class="font-display text-lg font-semibold text-white">Software &amp; Backend</h3>
+          </div>
+
+          <ul class="flex flex-wrap gap-2 text-sm">
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-java/60 hover:text-java hover:bg-java/[0.06]">
+              Java</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-java/60 hover:text-java hover:bg-java/[0.06]">
+              Spring Boot</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-java/60 hover:text-java hover:bg-java/[0.06]">
+              SQL</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-java/60 hover:text-java hover:bg-java/[0.06]">
+              Android</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-java/60 hover:text-java hover:bg-java/[0.06]">
+              SQLite</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-java/60 hover:text-java hover:bg-java/[0.06]">
+              PHP</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-java/60 hover:text-java hover:bg-java/[0.06]">
+              Git / GitHub</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-java/60 hover:text-java hover:bg-java/[0.06]">
+              Material Design</li>
+            <li
+              class="cursor-default rounded-lg border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-gray-200 transition hover:-translate-y-0.5 hover:border-java/60 hover:text-java hover:bg-java/[0.06]">
+              Figma</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
+      <div
+        class="spotlight reveal relative overflow-hidden rounded-3xl border border-white/[0.1] bg-gradient-to-b from-white/[0.04] via-white/[0.02] to-ink-900/60 px-6 py-16 text-center shadow-soft backdrop-blur-md sm:px-12 sm:py-24">
+        <div
+          class="glow-orb pointer-events-none absolute left-1/2 top-0 h-96 w-[750px] -translate-x-1/2 -translate-y-1/2"
+          aria-hidden="true"></div>
+        <p class="relative font-mono text-xs uppercase tracking-[0.2em] text-accent">
+          <span class="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>06 — Contact
+        </p>
+        <h2
+          class="relative mx-auto mt-4 max-w-2xl font-display text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+          Let's build something together.</h2>
+        <p class="relative mx-auto mt-5 max-w-xl text-[15px] leading-7 text-gray-300 sm:text-base">
+          Always open to discussing Machine Learning projects, software engineering challenges, collaboration
+          opportunities... or the latest linear switches. Drop me a line.
+        </p>
+        <div class="relative mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="mailto:salvilopp10@gmail.com" id="contact-mailto"
+            class="group inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-ink-950 transition hover:shadow-glow hover:brightness-110 shadow-[0_0_30px_-5px_rgba(34,211,238,0.5)]">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2.5" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4 7 8 6 8-6" />
+            </svg>
+            salvilopp10@gmail.com
+          </a>
+          <button type="button" id="copy-email" data-email="salvilopp10@gmail.com"
+            class="inline-flex items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.04] px-5 py-3.5 text-sm text-gray-200 transition hover:border-accent/50 hover:text-white hover:bg-white/[0.07]">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <rect x="9" y="9" width="11" height="11" rx="2" />
+              <path stroke-linecap="round" d="M5 15V6a2 2 0 0 1 2-2h9" />
+            </svg>
+            <span id="copy-email-label">Copy email</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-gray-800/80">
+    <div
+      class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 px-5 py-8 text-sm text-gray-400 sm:flex-row sm:px-8">
+      <p>© <span id="year">2026</span> Salvador López Trigueros. Built with HTML, Tailwind &amp; Vanilla JS.</p>
+      <div class="flex items-center gap-5">
+        <a href="https://www.linkedin.com/in/salvador-l%C3%B3pez-trigueros-dev/" id="footer-linkedin" target="_blank"
+          rel="noopener noreferrer" class="transition hover:text-accent">LinkedIn</a>
+        <a href="https://github.com/sloptri" id="footer-github" target="_blank" rel="noopener noreferrer"
+          class="transition hover:text-accent">GitHub</a>
+        <a href="mailto:salvilopp10@gmail.com" id="footer-email" class="transition hover:text-accent">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      'use strict';
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const $ = (s, c = document) => c.querySelector(s);
+      const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
+
+      /* ---------- Reveal on scroll ---------- */
+      const reveals = $$('.reveal');
+      if ('IntersectionObserver' in window && !prefersReduced) {
+        const io = new IntersectionObserver((entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        reveals.forEach((el) => io.observe(el));
+      } else {
+        reveals.forEach((el) => el.classList.add('is-visible'));
+      }
+
+      /* ---------- Count-up numbers ---------- */
+      const counters = $$('[data-count]');
+      const runCounter = (el) => {
+        const target = parseFloat(el.dataset.count);
+        const decimals = parseInt(el.dataset.decimals || '0', 10);
+        if (prefersReduced) { el.textContent = target.toFixed(decimals); return; }
+        const duration = 1400;
+        const start = performance.now();
+        const tick = (now) => {
+          const p = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = (target * eased).toFixed(decimals);
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+      if ('IntersectionObserver' in window) {
+        const cio = new IntersectionObserver((entries, obs) => {
+          entries.forEach((e) => { if (e.isIntersecting) { runCounter(e.target); obs.unobserve(e.target); } });
+        }, { threshold: 0.6 });
+        counters.forEach((c) => cio.observe(c));
+      } else {
+        counters.forEach(runCounter);
+      }
+
+      /* ---------- Active nav link ---------- */
+      const navLinks = $$('.nav-link');
+      const sections = navLinks.map((l) => document.getElementById(l.dataset.section)).filter(Boolean);
+      if ('IntersectionObserver' in window) {
+        const nio = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach((l) => l.classList.toggle('active', l.dataset.section === entry.target.id));
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        sections.forEach((s) => nio.observe(s));
+      }
+
+      /* ---------- Header state + scroll progress ---------- */
+      const header = $('#site-header');
+      const progress = $('#scroll-progress');
+      let ticking = false;
+      const onScroll = () => {
+        const y = window.scrollY;
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
+        header.classList.toggle('bg-ink-950/70', y > 12);
+        header.classList.toggle('backdrop-blur-xl', y > 12);
+        header.classList.toggle('border-b', y > 12);
+        header.classList.toggle('border-gray-800/70', y > 12);
+        ticking = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!ticking) { requestAnimationFrame(onScroll); ticking = true; }
+      }, { passive: true });
+      onScroll();
+
+      /* ---------- Mobile menu ---------- */
+      const toggle = $('#menu-toggle');
+      const menu = $('#mobile-menu');
+      const setMenu = (open) => {
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        $('#icon-menu').classList.toggle('hidden', open);
+        $('#icon-close').classList.toggle('hidden', !open);
+        menu.classList.toggle('opacity-0', !open);
+        menu.classList.toggle('-translate-y-2', !open);
+        menu.classList.toggle('pointer-events-none', !open);
+      };
+      toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+      $$('.mobile-link').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+      window.addEventListener('resize', () => { if (window.innerWidth >= 768) setMenu(false); });
+
+      /* ---------- Cursor spotlight on cards ---------- */
+      if (window.matchMedia('(hover: hover)').matches) {
+        $$('.spotlight').forEach((card) => {
+          card.addEventListener('pointermove', (e) => {
+            const r = card.getBoundingClientRect();
+            card.style.setProperty('--x', `${e.clientX - r.left}px`);
+            card.style.setProperty('--y', `${e.clientY - r.top}px`);
+          });
+        });
+      }
+
+      /* ---------- Copy email ---------- */
+      const copyBtn = $('#copy-email');
+      const copyLabel = $('#copy-email-label');
+      copyBtn.addEventListener('click', async () => {
+        const email = copyBtn.dataset.email;
+        try {
+          await navigator.clipboard.writeText(email);
+          copyLabel.textContent = 'Copied!';
+          copyBtn.classList.add('border-accent/50', 'text-accent');
+        } catch {
+          window.location.href = `mailto:${email}`;
+          return;
+        }
+        setTimeout(() => {
+          copyLabel.textContent = 'Copy email';
+          copyBtn.classList.remove('border-accent/50', 'text-accent');
+        }, 2000);
+      });
+
+      /* ---------- Year ---------- */
+      $('#year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+
 </html>
