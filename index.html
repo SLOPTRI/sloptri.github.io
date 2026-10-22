@@ -325,7 +325,7 @@
         <span class="hidden sm:inline">Salvador López</span>
       </a>
 
-      <ul class="hidden items-center gap-8 text-sm text-gray-300 md:flex">
+      <ul class="hidden items-center gap-8 text-sm text-gray-300 lg:flex">
         <li><a href="#about" class="nav-link transition-colors hover:text-white" data-section="about">About</a></li>
         <li><a href="#experience" class="nav-link transition-colors hover:text-white"
             data-section="experience">Experience</a></li>
@@ -349,9 +349,9 @@
 
       <div class="flex items-center gap-3">
         <a href="#contact" id="nav-cta"
-          class="hidden rounded-full border border-white/[0.1] bg-white/[0.04] px-4 py-2 text-sm font-medium text-white transition hover:border-accent/60 hover:text-accent hover:shadow-[0_0_16px_rgba(34,211,238,0.25)] md:inline-flex">Contact</a>
+          class="hidden rounded-full border border-white/[0.1] bg-white/[0.04] px-4 py-2 text-sm font-medium text-white transition hover:border-accent/60 hover:text-accent hover:shadow-[0_0_16px_rgba(34,211,238,0.25)] lg:inline-flex">Contact</a>
         <button id="menu-toggle" type="button"
-          class="grid h-10 w-10 place-items-center rounded-lg border border-gray-800 bg-white/[0.03] text-gray-300 md:hidden"
+          class="grid h-10 w-10 place-items-center rounded-lg border border-gray-800 bg-white/[0.03] text-gray-300 transition hover:border-gray-700 hover:text-white lg:hidden"
           aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
           <svg id="icon-menu" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
             <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h10" />
@@ -366,7 +366,7 @@
 
     <!-- Mobile menu -->
     <div id="mobile-menu"
-      class="pointer-events-none mx-4 -translate-y-2 rounded-2xl border border-gray-800 bg-ink-900/95 p-2 opacity-0 backdrop-blur-xl transition-all duration-300 md:hidden"
+      class="invisible pointer-events-none absolute left-4 right-4 top-full max-h-[calc(100svh-5.5rem)] -translate-y-2 overflow-y-auto rounded-2xl border border-gray-800 bg-ink-900/95 p-2 opacity-0 shadow-soft backdrop-blur-xl transition-all duration-300 sm:left-auto sm:right-8 sm:w-72 lg:hidden"
       aria-label="Mobile navigation">
       <ul class="flex flex-col text-[15px] text-gray-300">
         <li><a href="#about"
@@ -392,11 +392,11 @@
   <main>
     <!-- ============ HERO ============ -->
     <section id="home" aria-label="Introduction"
-      class="relative mx-auto flex min-h-[100svh] max-w-6xl items-center px-5 pb-20 pt-32 sm:px-8 lg:pt-28">
-      <div class="grid w-full items-center gap-14 lg:grid-cols-12">
-        <div class="lg:col-span-7">
+      class="relative mx-auto flex min-h-[100svh] max-w-6xl items-center px-5 pb-16 pt-28 sm:px-8 sm:pb-20 sm:pt-32 lg:pt-28">
+      <div class="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-14">
+        <div class="min-w-0 lg:col-span-7">
           <div
-            class="reveal mb-7 inline-flex items-center gap-2.5 rounded-full border border-white/[0.08] bg-white/[0.035] px-3.5 py-1.5 text-xs text-gray-300 backdrop-blur-sm shadow-[0_1px_0_0_rgba(255,255,255,0.06)_inset]">
+            class="reveal mb-7 inline-flex max-w-full flex-wrap items-center gap-x-2.5 gap-y-1 rounded-2xl border sm:rounded-full border-white/[0.08] bg-white/[0.035] px-3.5 py-1.5 text-xs text-gray-300 backdrop-blur-sm shadow-[0_1px_0_0_rgba(255,255,255,0.06)_inset]">
             <span class="relative flex h-2 w-2">
               <span class="ping-soft absolute inline-flex h-full w-full rounded-full bg-emerald-400"></span>
               <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
@@ -498,7 +498,7 @@
         </div>
 
         <!-- Code card (decorative) -->
-        <div class="reveal lg:col-span-5" style="--d:420ms" aria-hidden="true">
+        <div class="reveal min-w-0 lg:col-span-5" style="--d:420ms" aria-hidden="true">
           <div
             class="spotlight relative overflow-hidden rounded-2xl border border-white/[0.08] bg-ink-900/80 shadow-soft backdrop-blur-md">
             <div class="flex items-center justify-between border-b border-gray-800/80 bg-white/[0.02] px-4 py-3">
@@ -511,7 +511,7 @@
               <span class="font-mono text-[11px] text-accent font-medium">Python 3</span>
             </div>
             <pre
-              class="overflow-x-auto p-5 font-mono text-[12.5px] leading-6 text-gray-300 sm:text-[13px]"><code><span class="text-gray-500">In [1]:</span> <span class="text-cyan-400">from</span> sklearn.pipeline <span class="text-cyan-400">import</span> Pipeline
+              class="overflow-x-auto p-4 font-mono text-[11.5px] leading-6 text-gray-300 sm:p-5 sm:text-[13px]"><code><span class="text-gray-500">In [1]:</span> <span class="text-cyan-400">from</span> sklearn.pipeline <span class="text-cyan-400">import</span> Pipeline
         <span class="text-cyan-400">from</span> career <span class="text-cyan-400">import</span> <span class="text-amber-300">Developer</span>
 
 <span class="text-gray-500">In [2]:</span> salva = <span class="text-amber-300">Developer</span>(
@@ -529,7 +529,7 @@
       </div>
 
       <a href="#about"
-        class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-gray-500 transition hover:text-gray-300 sm:flex"
+        class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-gray-500 transition hover:text-gray-300 lg:flex"
         aria-label="Scroll to About section">
         Scroll
         <span class="h-8 w-px bg-gradient-to-b from-gray-600 to-transparent"></span>
@@ -548,7 +548,7 @@
           engineering<br class="hidden sm:block" /> to artificial intelligence.</h2>
       </header>
 
-      <div class="grid gap-4 md:grid-cols-6">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-6">
         <article
           class="spotlight reveal rounded-2xl border border-white/[0.08] bg-white/[0.025] p-7 shadow-soft backdrop-blur-sm md:col-span-4 md:row-span-2 sm:p-9">
           <p class="text-[15px] leading-7 text-gray-300 sm:text-base sm:leading-8">
@@ -745,13 +745,13 @@
         </a>
       </header>
 
-      <div class="grid gap-5 md:grid-cols-6">
+      <div class="grid grid-cols-1 gap-5 lg:grid-cols-6">
         <!-- Early Detection: Mental Health ML -->
         <article id="project-mental-health"
-          class="spotlight reveal group flex flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-soft backdrop-blur-sm transition hover:border-accent/40 md:col-span-3">
+          class="spotlight reveal group flex flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-soft backdrop-blur-sm transition hover:border-accent/40 lg:col-span-3">
           <!-- Visual header: confusion matrix representation & recall metric -->
           <div
-            class="relative flex min-h-[13rem] items-center justify-center gap-7 overflow-hidden border-b border-gray-800/80 bg-gradient-to-b from-accent/[0.09] via-white/[0.02] to-transparent px-6 py-6 sm:min-h-[14rem]"
+            class="relative flex min-h-[13rem] flex-wrap items-center justify-center gap-x-6 gap-y-4 overflow-hidden border-b border-gray-800/80 bg-gradient-to-b from-accent/[0.09] via-white/[0.02] to-transparent px-5 pb-6 pt-12 sm:min-h-[14rem] sm:gap-x-7 sm:px-6"
             aria-label="Machine Learning confusion matrix and recall performance">
             <div class="absolute left-5 top-4 flex items-center gap-2 font-mono text-[11px] text-gray-300">
               <span class="h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_6px_rgba(34,211,238,0.8)]"></span> Logistic
@@ -822,28 +822,28 @@
             </blockquote>
 
             <!-- Model comparison table -->
-            <div class="overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.015]">
-              <table class="w-full text-left font-mono text-xs">
+            <div class="overflow-x-auto rounded-xl border border-white/[0.08] bg-white/[0.015]">
+              <table class="w-full text-left font-mono text-[11px] sm:text-xs">
                 <thead class="border-b border-white/[0.08] bg-white/[0.03] text-gray-300">
                   <tr>
-                    <th class="px-3 py-2 font-normal">Model</th>
-                    <th class="px-3 py-2 font-normal">Macro F1</th>
-                    <th class="px-3 py-2 font-normal">Recall (Neg)</th>
-                    <th class="px-3 py-2 font-normal">Status</th>
+                    <th class="px-2 py-2 font-normal sm:px-3">Model</th>
+                    <th class="px-2 py-2 font-normal sm:px-3">Macro F1</th>
+                    <th class="px-2 py-2 font-normal sm:px-3">Recall (Neg)</th>
+                    <th class="px-2 py-2 font-normal sm:px-3">Status</th>
                   </tr>
                 </thead>
                 <tbody class="divide-y divide-white/[0.05] text-gray-300">
                   <tr>
-                    <td class="px-3 py-2">Random Forest</td>
-                    <td class="px-3 py-2">81%</td>
-                    <td class="px-3 py-2">72.7%</td>
-                    <td class="px-3 py-2 text-gray-400">Baseline</td>
+                    <td class="px-2 py-2 sm:px-3">Random Forest</td>
+                    <td class="px-2 py-2 sm:px-3">81%</td>
+                    <td class="px-2 py-2 sm:px-3">72.7%</td>
+                    <td class="px-2 py-2 text-gray-400 sm:px-3">Baseline</td>
                   </tr>
                   <tr class="border-l-2 border-accent bg-accent/[0.08] text-white font-medium">
-                    <td class="px-3 py-2 font-semibold text-white">Logistic Regression</td>
-                    <td class="px-3 py-2 text-accent">84%</td>
-                    <td class="px-3 py-2 font-semibold text-accent">87.9%</td>
-                    <td class="px-3 py-2 font-medium text-accent">✓ Chosen model</td>
+                    <td class="px-2 py-2 font-semibold text-white sm:px-3">Logistic Regression</td>
+                    <td class="px-2 py-2 text-accent sm:px-3">84%</td>
+                    <td class="px-2 py-2 font-semibold text-accent sm:px-3">87.9%</td>
+                    <td class="px-2 py-2 font-medium text-accent sm:px-3">✓ Chosen model</td>
                   </tr>
                 </tbody>
               </table>
@@ -920,7 +920,7 @@
 
         <!-- SCalc -->
         <article id="project-scalc"
-          class="spotlight reveal group flex flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-soft backdrop-blur-sm transition hover:border-accent/40 md:col-span-3"
+          class="spotlight reveal group flex flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-soft backdrop-blur-sm transition hover:border-accent/40 lg:col-span-3"
           style="--d:100ms">
           <!-- Visual header: screenshot fallback to data model diagram -->
           <div
@@ -1013,7 +1013,7 @@
 
         <!-- kbevi (horizontal layout across 6 columns) -->
         <article id="project-kbevi"
-          class="spotlight reveal group flex flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-soft backdrop-blur-sm transition hover:border-accent/40 md:col-span-6 md:flex-row"
+          class="spotlight reveal group flex flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] shadow-soft backdrop-blur-sm transition hover:border-accent/40 lg:col-span-6 md:flex-row"
           style="--d:120ms">
           <div
             class="flex h-48 items-center justify-center border-b border-gray-800/80 bg-gradient-to-b from-white/[0.04] to-transparent md:h-auto md:w-5/12 md:border-b-0 md:border-r"
@@ -1088,9 +1088,9 @@
           credentials.</h2>
       </header>
 
-      <div class="grid gap-4 md:grid-cols-3">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <article
-          class="spotlight reveal flex flex-col rounded-2xl border border-accent/35 bg-accent/[0.05] p-6 shadow-[0_0_24px_-8px_rgba(34,211,238,0.2)] backdrop-blur-sm transition hover:border-accent/60 sm:p-7">
+          class="spotlight reveal flex flex-col rounded-2xl border border-accent/35 md:col-span-2 lg:col-span-1 bg-accent/[0.05] p-6 shadow-[0_0_24px_-8px_rgba(34,211,238,0.2)] backdrop-blur-sm transition hover:border-accent/60 sm:p-7">
           <div class="flex items-center justify-between">
             <time class="font-mono text-xs text-gray-400">2026 — 2027</time>
             <span
@@ -1152,7 +1152,7 @@
         <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">Technical stack.</h2>
       </header>
 
-      <div class="grid gap-5 md:grid-cols-2">
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
         <!-- Data & AI -->
         <div
           class="spotlight reveal flex flex-col rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 shadow-soft backdrop-blur-sm sm:p-8">
@@ -1406,13 +1406,17 @@
         $('#icon-menu').classList.toggle('hidden', open);
         $('#icon-close').classList.toggle('hidden', !open);
         menu.classList.toggle('opacity-0', !open);
+        menu.classList.toggle('invisible', !open);
         menu.classList.toggle('-translate-y-2', !open);
         menu.classList.toggle('pointer-events-none', !open);
       };
       toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
       $$('.mobile-link').forEach((a) => a.addEventListener('click', () => setMenu(false)));
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
-      window.addEventListener('resize', () => { if (window.innerWidth >= 768) setMenu(false); });
+      document.addEventListener('click', (e) => {
+        if (toggle.getAttribute('aria-expanded') === 'true' && !header.contains(e.target)) setMenu(false);
+      });
+      window.addEventListener('resize', () => { if (window.innerWidth >= 1024) setMenu(false); });
 
       /* ---------- Cursor spotlight on cards ---------- */
       if (window.matchMedia('(hover: hover)').matches) {
